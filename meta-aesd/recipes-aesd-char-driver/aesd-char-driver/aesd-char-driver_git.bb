@@ -4,18 +4,21 @@
 
 # WARNING: the following LICENSE and LIC_FILES_CHKSUM values are best guesses - it is
 # your responsibility to verify that the values are complete and correct.
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://LICENSE;md5=8ed1a118f474eea5e159b560c339329b \
-                    file://assignment-autotest/LICENSE;md5=cde0fddafb4332f35095da3d4fa989dd \
-                    file://assignment-autotest/Unity/LICENSE.txt;md5=b7dd0dffc9dda6a87fa96e6ba7f9ce6c"
 
-FILESEXTRAPATHS:prepend := "${THISDIR}/file:"
+
+
+
+LICENSE = "MIT"
+LIC_FILES_CHKSUM = "file://../LICENSE;md5=8ed1a118f474eea5e159b560c339329b"
+
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
 SRC_URI = "git://github.com/cu-ecen-aeld/assignment-1-part-of-the-crew.git;protocol=https;branch=master"
+SRC_URI += "file://aesdchar_init"
 
 # Modify these as desired
 PV = "1.0+git${SRCPV}"
-SRCREV = "cf5425aa464835dc1d581231ba8fd71119522f10"
+SRCREV = "e4f80c6a89731ceef2754d4b67bdc96fc89e6fb0"
 
 S = "${WORKDIR}/git/aesd-char-driver"
 
