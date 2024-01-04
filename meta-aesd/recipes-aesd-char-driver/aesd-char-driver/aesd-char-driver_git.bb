@@ -18,7 +18,7 @@ SRC_URI += "file://aesdchar_init"
 
 # Modify these as desired
 PV = "1.0+git${SRCPV}"
-SRCREV = "b9b3fbbe61491a116c430b2dd26a2aa3e82426b7"
+SRCREV = "711481e6f268934da82b3a4ac1cb91ecb178aa0d"
 
 S = "${WORKDIR}/git/aesd-char-driver"
 
